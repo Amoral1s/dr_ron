@@ -200,7 +200,7 @@ a {
   justify-content: flex-end;
   background-image: url("../img/dr__ron.png");
   background-repeat: no-repeat;
-  background-position: bottom +45px left;
+  background-position: bottom +75px left;
   background-size: 55% auto; }
 
 .about__block {
@@ -245,4 +245,86 @@ a {
 .about__button {
   padding: 15px 25px;
   margin-top: 45px;
-  margin-bottom: 15px; }
+  margin-bottom: 45px; }
+
+.popular {
+  margin-top: 50px; }
+  .popular__title {
+    font-family: 'Montserrat EB', sans-serif;
+    font-size: 50px;
+    color: #3B2072;
+    text-align: center;
+    margin-bottom: 70px; }
+  .popular__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .popular__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: top right; }
+    .popular__item__title {
+      font-family: Evolventa, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 22px;
+      letter-spacing: 0.05em; }
+      .popular__item__title span {
+        font-family: Evolventa, sans-serif;
+        text-transform: lowercase;
+        font-size: 20px;
+        color: #262626; }
+    .popular__item .purple {
+      color: #8C52FF; }
+    .popular__item .pink {
+      color: #CB6CE6; }
+    .popular__item__price {
+      font-family: Evolventa, sans-serif;
+      font-weight: bold;
+      line-height: 150%; }
+      .popular__item__price_old {
+        position: relative;
+        display: inline-flex;
+        font-size: 20px;
+        color: #262626;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 55px; }
+        .popular__item__price_old:before {
+          content: "";
+          border-bottom: 3px solid #262626;
+          position: absolute;
+          width: 50%;
+          transform: rotate(-10deg); }
+      .popular__item__price_new {
+        display: inline-flex;
+        font-size: 30px;
+        color: #ffffff;
+        background: #262626;
+        border-radius: 10px;
+        width: 170px;
+        height: 55px;
+        align-items: center;
+        justify-content: center; }
+    .popular__item__button {
+      font-family: Evolventa, sans-serif;
+      font-weight: bold;
+      width: 170px;
+      height: 55px;
+      font-size: 16px;
+      color: #262626;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      border: none;
+      margin-top: 20px; }

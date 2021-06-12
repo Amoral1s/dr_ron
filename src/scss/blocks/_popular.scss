@@ -1,3 +1,94 @@
 .popular{
-	
+	margin-top: 50px;
+	&__title{
+		font-family: 'Montserrat EB', sans-serif;
+		font-size: 50px;
+		color: #3B2072;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	&__block{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__item{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 20px;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		margin-right: 40px;
+		margin-bottom: 50px;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-position: top right;
+		&__title{
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 22px;
+			letter-spacing: 0.05em;
+			span{
+				font-family: Evolventa, sans-serif;
+				text-transform: lowercase;
+				font-size: 20px;
+				color: #262626;
+			}
+		}
+		.purple{
+			color: #8C52FF;
+		}
+		.pink{
+			color: #CB6CE6;
+		}
+		&__price{
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			line-height: 150%;
+			&_old {
+				position: relative;
+				display: inline-flex;
+				font-size: 20px;
+				color: #262626;
+				justify-content: center;
+				align-items: center;
+				width: 170px;
+				height: 55px;
+				&:before{
+					content: "";
+					border-bottom: 3px solid #262626;
+					position: absolute;
+					width: 50%;
+					transform: rotate(-10deg);
+				}
+			}
+			&_new{
+				display: inline-flex;
+				font-size: 30px;
+				color: #ffffff;
+				background: #262626;
+				border-radius: 10px;
+				width: 170px;
+				height: 55px;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		&__button{
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			width: 170px;
+			height: 55px;
+			font-size: 16px;
+			color: #262626;
+			background: #FFFFFF;
+			box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+			border-radius: 10px;
+			border: none;
+			margin-top: 20px;
+		}
+	}
 }
