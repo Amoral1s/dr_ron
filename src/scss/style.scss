@@ -2,5 +2,8 @@
 @import './variables/variables';
 @import './base.scss';
 
-@import './blocks/header/header.scss';
-@import './blocks/footer/footer';
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/about';
+@import './blocks/popular';
+@import './blocks/footer';

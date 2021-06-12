@@ -1,0 +1,55 @@
+.header{
+	padding: 15px 40px;
+	box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+	&__menu{
+		ul{
+			display: flex;
+			align-items: center;
+			padding-left: 0;
+			li{
+				list-style-type: none;
+				padding: 10px 15px;
+				&:nth-child(2){
+					border-left: 1px solid $border;
+					border-right: 1px solid $border;
+				}
+				a{
+					color: $grey;
+					font-family: Evolventa, sans-serif;
+					font-size: 16px;
+					&:hover, &:active{
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	&__geo{
+		display: flex;
+		align-items: center;
+		img{
+			padding-right: 15px;
+		}
+		p{
+			font-family: Evolventa, sans-serif;
+			font-size: 16px;
+		}
+	}
+	&__phone{
+		display: flex;
+		img{
+			padding-right: 15px;
+		}
+		a{
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			font-size: 20px;
+			color: $grey;
+		}
+	}
+	&__btn{
+		button{
+			padding: 13px 19px;
+		}
+	}
+}

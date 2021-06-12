@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext");
+@font-face {
+  font-family: 'Montserrat EB';
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("../fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Evolventa';
+  src: url("../fonts/Evolventa-Regular.eot");
+  src: url("../fonts/Evolventa-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Evolventa-Regular.woff2") format("woff2"), url("../fonts/Evolventa-Regular.woff") format("woff"), url("../fonts/Evolventa-Regular.ttf") format("truetype"), url("../fonts/Evolventa-Regular.svg#Evolventa-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Evolventa';
+  src: url("../fonts/Evolventa-Bold.eot");
+  src: url("../fonts/Evolventa-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Evolventa-Bold.woff2") format("woff2"), url("../fonts/Evolventa-Bold.woff") format("woff"), url("../fonts/Evolventa-Bold.ttf") format("truetype"), url("../fonts/Evolventa-Bold.svg#Evolventa-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.btn-purple {
+  font-family: Evolventa, sans-serif;
+  border: none;
+  background: linear-gradient(90deg, #8D52FE 0%, #CA6CE7 100%);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer; }
+  .btn-purple:hover {
+    background-color: #8C52FF !important; }
+
+.header {
+  padding: 15px 40px;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15); }
+  .header__menu ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0; }
+    .header__menu ul li {
+      list-style-type: none;
+      padding: 10px 15px; }
+      .header__menu ul li:nth-child(2) {
+        border-left: 1px solid #D8D8D8;
+        border-right: 1px solid #D8D8D8; }
+      .header__menu ul li a {
+        color: #262626;
+        font-family: Evolventa, sans-serif;
+        font-size: 16px; }
+        .header__menu ul li a:hover, .header__menu ul li a:active {
+          font-weight: bold; }
+  .header__geo {
+    display: flex;
+    align-items: center; }
+    .header__geo img {
+      padding-right: 15px; }
+    .header__geo p {
+      font-family: Evolventa, sans-serif;
+      font-size: 16px; }
+  .header__phone {
+    display: flex; }
+    .header__phone img {
+      padding-right: 15px; }
+    .header__phone a {
+      font-family: Evolventa, sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: #262626; }
+  .header__btn button {
+    padding: 13px 19px; }
+
+.main .container {
+  background-image: url("../img/main__face.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 60% auto; }
+
+.main__breadcrumbs {
+  margin-top: 40px;
+  margin-bottom: 60px; }
+  .main__breadcrumbs ul {
+    display: flex;
+    list-style-type: none; }
+    .main__breadcrumbs ul li img {
+      margin-left: 5px;
+      margin-right: 10px; }
+    .main__breadcrumbs ul li a {
+      font-family: Evolventa, sans-serif;
+      font-size: 14px;
+      color: #8B8B8F; }
+
+.main__title {
+  font-family: Montserrat, sans-serif;
+  font-size: 52px;
+  color: #262626;
+  margin-bottom: 40px; }
+
+.main__description {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  color: #262626; }
+  .main__description span {
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    color: #262626;
+    margin-bottom: 10px; }
+
+.main__button {
+  padding: 15px 25px;
+  margin-top: 45px;
+  margin-bottom: 75px; }
+
+.main__advantages {
+  display: flex; }
+  .main__advantages__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    padding: 18px 25px 18px 67px;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background-color: #ffffff; }
+    .main__advantages__item span {
+      content: '';
+      position: absolute;
+      top: -26px;
+      left: -26px;
+      background-color: #262626;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 0 0 6px rgba(140, 82, 255, 0.2), 0 0 0 12px rgba(140, 82, 255, 0.2); }
+
+.main__dr-ron {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 30px; }
+  .main__dr-ron img {
+    width: 120px;
+    height: 120px; }
+  .main__dr-ron p {
+    font-family: Evolventa, sans-serif;
+    color: #262626;
+    font-size: 16px;
+    margin-left: 35px; }
+    .main__dr-ron p span {
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px; }
+
+.about .container {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../img/dr__ron.png");
+  background-repeat: no-repeat;
+  background-position: bottom +45px left;
+  background-size: 55% auto; }
+
+.about__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%; }
+
+.about__title {
+  font-family: 'Montserrat EB', sans-serif;
+  font-size: 50px;
+  color: #3B2072;
+  text-align: center; }
+  .about__title span {
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #262626;
+    letter-spacing: 0.05em;
+    margin-top: 20px; }
+
+.about__us {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 5px 40px 5px 33px;
+  margin-top: 40px; }
+  .about__us__item {
+    display: flex;
+    align-items: center;
+    margin: 35px 0; }
+    .about__us__item img {
+      width: 45px; }
+    .about__us__item p {
+      font-family: Evolventa, sans-serif;
+      font-size: 20px;
+      margin-left: 20px;
+      letter-spacing: 0.05em;
+      color: #262626; }
+
+.about__button {
+  padding: 15px 25px;
+  margin-top: 45px;
+  margin-bottom: 15px; }
