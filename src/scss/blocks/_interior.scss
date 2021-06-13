@@ -1,0 +1,28 @@
+.interior{
+	&__title{
+		margin-bottom: 60px;
+		h2{
+			font-family: 'Montserrat EB', sans-serif;
+			font-size: 50px;
+			color: #3B2072;
+			text-align: center;
+		}
+	}
+	&__items{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__item{
+		margin: 20px 0;
+		&:first-child, &:nth-child(4){
+			width: 450px;
+		}
+		&:nth-child(2), &:nth-child(3){
+			width: 650px;
+		}
+		img{
+			width: 100%;
+		}
+	}
+}

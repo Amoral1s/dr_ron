@@ -1,0 +1,67 @@
+.feedback {
+	margin-bottom: 100px;
+	&__title {
+		margin-top: 100px;
+		margin-bottom: 60px;
+
+		h2 {
+			font-family: 'Montserrat EB', sans-serif;
+			font-size: 50px;
+			color: #3B2072;
+			text-align: center;
+
+			span {
+				color: #CB6CE6;
+			}
+		}
+	}
+
+	.swiper-feedback {
+		padding-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		list-style: none;
+		padding: 0;
+		z-index: 1;
+		.swiper-slide {
+			text-align: center;
+			img {
+				width: 100%;
+			}
+		}
+
+		.swiper-pagination-bullet-active {
+			background: #262626;
+		}
+
+		.swiper-slide-active{
+			transform: scale(1.3);
+			z-index: 9;
+		}
+
+		.swiper-slide.swiper-slide-prev,
+		.swiper-slide.swiper-slide-next {
+			opacity: 0.3;
+		}
+
+		.swiper-container-horizontal>.swiper-pagination-bullets,
+		.swiper-pagination-custom,
+		.swiper-pagination-fraction {
+			bottom: 25px;
+		}
+
+		.swiper-button-prev,
+		.swiper-container-rtl .swiper-button-next {
+			left: 29%;
+			filter: grayscale(100%);
+		}
+
+		.swiper-button-next,
+		.swiper-container-rtl .swiper-button-prev {
+			right: 29%;
+			filter: grayscale(100%);
+		}
+	}
+}

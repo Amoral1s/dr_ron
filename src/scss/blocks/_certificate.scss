@@ -1,0 +1,63 @@
+.certificate{
+	margin-bottom: 100px;
+	&__title{
+		text-align: center;
+		margin-bottom: 40px;
+		h2{
+			font-family: 'Montserrat EB', sans-serif;
+			font-size: 50px;
+			color: #3B2072;
+			margin-bottom: 20px;
+		}
+		p{
+			font-family: Evolventa, sans-serif;
+			font-size: 20px;
+			color: #262626;
+		}
+	}
+	.swiper-certificate {
+		padding-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		list-style: none;
+		padding: 0;
+		z-index: 1;
+
+		.swiper-slide {
+			text-align: center;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.swiper-pagination-bullet-active {
+			background: #262626;
+		}
+
+		.swiper-slide.swiper-slide-active,
+		.swiper-slide.swiper-slide-duplicate-prev {
+			opacity: 0.3;
+		}
+
+		.swiper-container-horizontal>.swiper-pagination-bullets,
+		.swiper-pagination-custom,
+		.swiper-pagination-fraction {
+			bottom: 25px;
+		}
+
+		.swiper-button-prev,
+		.swiper-container-rtl .swiper-button-next {
+			left: 15%;
+			filter: grayscale(100%);
+		}
+
+		.swiper-button-next,
+		.swiper-container-rtl .swiper-button-prev {
+			right:159%;
+			filter: grayscale(100%);
+		}
+	}
+}

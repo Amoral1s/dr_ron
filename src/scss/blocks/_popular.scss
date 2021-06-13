@@ -25,6 +25,9 @@
 		background-repeat: no-repeat;
 		background-size: auto 100%;
 		background-position: top right;
+		&:last-child{
+			margin-right: 0;
+		}
 		&__title{
 			font-family: Evolventa, sans-serif;
 			font-weight: bold;
