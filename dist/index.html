@@ -6,6 +6,7 @@
 	<title>DR RON</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=6e5ee013-e581-49c7-b630-206aff304c08&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 
@@ -536,6 +537,177 @@
 			</div>
 		</div>
 	</section>
+	<section class="maps">
+		<div class="container">
+			<div class="maps__title">
+				<h2>Контакты</h2>
+			</div>
+		</div>
+		<div id="map" style="width:100%;height:600px;"></div>
+		<div class="container">
+			<div class="maps__popup">
+				<div class="maps__popup__item">
+					<img src="icons/phone.svg" alt="">
+					<span><a href="tel:+74951131667">+7 (495) 003-16-67</a></span>
+				</div>
+				<div class="maps__popup__item">
+					<img src="icons/geo.svg" alt="">
+					<span>г. Москва, м. Аэропорт Кочновский <br> проезд, 4к1</span>
+				</div>
+				<div class="maps__popup__item">
+					<img src="icons/main__icon__mail.svg" alt="">
+					<span>Info@drron.ru</span>
+				</div>
+				<div class="maps__popup__item">
+					<img src="icons/main__icon__time.svg" alt="">
+					<span>Пн-Пт: 10.00 - 22.00</span>
+				</div>
+				<button>Как проехать</button>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="footer__logo">
+					<img src="icons/logo__black.svg" alt="">
+				</div>
+				<div class="footer__social">
+					<div class="footer__social__link"><a href=""><img src="icons/fb__icon__footer.svg" alt=""></a></div>
+					<div class="footer__social__link"><a href=""><img src="icons/instagram__icon__footer.svg" alt=""></a></div>
+					<div class="footer__social__link"><a href=""><img src="icons/vk__icon__footer.svg" alt=""></a></div>
+				</div>
+				<div class="footer__contacts">
+					<div class="footer__contacts__item"><img src="icons/phone.svg" alt=""><a href="tel:+74950031667">+7 (495) 003-16-67</a></div>
+					<div class="footer__contacts__item"><img src="icons/geo.svg" alt=""><p>г. Москва, м. Аэропорт Кочновский проезд, 4к1</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__middle">
+			<div class="container">
+				<div class="footer__middle__title">
+					<h3>Наши услуги</h3>
+				</div>
+				<div class="footer__middle__list">
+					<ul>
+						<li><a href=""><span>Нитевой лифтинг</span></a></li>
+						<li><a href="">Лицо</a></li>
+						<li><a href="">Веки</a></li>
+						<li><a href="">Брови</a></li>
+						<li><a href="">Второй подбородок</a></li>
+						<li><a href="">Брыли</a></li>
+						<li><a href="">Живот</a></li>
+						<li><a href="">Бедра и ягодицы</a></li>
+						<li><a href="">Грудь</a></li>
+						<li><a href="">Процедура "Лисьи глазки"</a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>Безоперационная <br> пластика</span></a></li>
+						<li><a href="">Ринопластика филлером</a></li>
+						<li><a href="">Ринопластика нитью</a></li>
+						<li><a href=""><span>Лечение <br> гипергидроза</span></a></li>
+						<li><a href=""><span>Интимная <br> косметология</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>Мезотерапия</span></a></li>
+						<li><a href="">Кожа лица</a></li>
+						<li><a href="">Кожа вокруг лица</a></li>
+						<li><a href="">Губы</a></li>
+						<li><a href="">Тело и живот</a></li>
+						<li><a href="">Шея и зона декольте</a></li>
+						<li><a href="">Бедра и ягодицы</a></li>
+						<li><a href="">Грудь</a></li>
+						<li><a href="">Руки</a></li>
+						<li><a href="">Кожа и голова</a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>Биоревитализация</span></a></li>
+						<li><a href="">Кожа лица</a></li>
+						<li><a href="">Губы</a></li>
+						<li><a href="">Шея и зона декольте</a></li>
+						<li><a href="">Глаза</a></li>
+						<li><a href=""><span>Липолитики</span></a></li>
+						<li><a href="">Для лица</a></li>
+						<li><a href="">Для тела</a></li>
+						<li><a href=""><span>Инъекция коллагена</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>Омоложение глаз и век</span></a></li>
+						<li><a href="">Устранение мешков</a></li>
+						<li><a href="">Устранение синяков</a></li>
+						<li><a href="">Заполнение носослёзной <br> борозды</a></li>
+						<li><a href=""><span>Ботулинотерапия</span></a></li>
+						<li><a href="">Ботокс</a></li>
+						<li><a href="">Диспорт</a></li>
+						<li><a href="">Ботулакс</a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>Увеличение губ</span></a></li>
+						<li><a href=""><span>Профиль джоли</span></a></li>
+						<li><a href=""><span>Лечение акне <br> лица и тела</span></a></li>
+						<li><a href="">Пилинг лица</a></li>
+						<li><a href="">Чистка лица</a></li>
+						<li><a href="">Пилинг спины, декольте, <br> шеи и рук</a></li>
+					</ul>
+				</div>
+				<div class="footer__middle__title">
+					<h3>Наши услуги</h3>
+				</div>
+				<div class="footer__middle__list">
+					<ul>
+						<li><a href=""><span>Коррекция возрастных <br> изменений контура <br> лица</span></a></li>
+						<li><a href="">Устранение второго подбородка</a></li>
+						<li><a href="">Устранение брылей</a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>устранение морщин</span></a></li>
+						<li><a href="">На лице</a></li>
+						<li><a href="">На лбу</a></li>
+						<li><a href="">Межбровные</a></li>
+						<li><a href="">Носогубные</a></li>
+						<li><a href="">Вокруг рта</a></li>
+						<li><a href="">На шее (кольца венеры)</a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>Старение рук, шеи и <br> зоны декольте, <br> устранение сухости <br> и морщин</span></a></li>
+						<li><a href="">В зоне декольте</a></li>
+						<li><a href="">На руках</a></li>
+						<li><a href="">На шее</a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>Коррекция формы носа <br> -  горбинка, длинный <br> нос, опущенный кончик</span></a></li>
+					</ul>
+					<ul>
+						<li><a href=""><span>Волюмизация <br> ( восстановление <br> объем тела) инъекции <br> филлера: ягодицы, <br> грудь, икры</span></a></li>
+					<ul>
+						<li><a href=""><span>Увеличение губ</span></a></li>
+						<li><a href=""><span>Профиль джоли</span></a></li>
+						<li><a href=""><span>Лечение акне <br> лица и тела</span></a></li>
+						<li><a href="">Пилинг лица</a></li>
+						<li><a href="">Чистка лица</a></li>
+						<li><a href="">Пилинг спины, декольте, <br> шеи и рук</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="footer__bottom__left">
+					<p>
+						© 2020 «Доктор Рон» <br>
+						Линцензия №: ЛО-77-01-014810 <br>
+						ИНН 7733289690, ОГРН 1167746570045 <br>
+						Копирование материалов с сайта возможно только при указании активной ссылки на источник
+					</p>
+				</div>
+				<div class="footer__bottom__right">
+					<p><a href="">Использование файлов cookie</a><a href="">Политика конфиденциальности</a></p>
+					<p><a href="">Разработка сайта</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
