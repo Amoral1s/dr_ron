@@ -68,6 +68,12 @@ $(".work__tab").click(function () {
 	$(".work__item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
 
+$(".types__item").not(":first").hide();
+$(".types__tab").click(function () {
+	$(".types__tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".types__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
@@ -119,3 +125,4 @@ function init() {
 	myMap.geoObjects.add(myPlacemark);
 
 }
+

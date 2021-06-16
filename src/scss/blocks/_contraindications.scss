@@ -1,0 +1,51 @@
+.contraindications{
+	margin-bottom: 100px;
+	&__title{
+		h2 {
+			font-family: 'Montserrat EB', sans-serif;
+			font-size: 50px;
+			color: #3B2072;
+			text-align: center;
+			margin-bottom: 60px;
+			margin-top: 100px;
+		}
+	}
+	&_items{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__left{
+		z-index: 9;
+	}
+	&__right{
+		z-index: 1;
+		img{
+			max-width: 660px;
+			z-index: 1;
+		}
+	}
+	ul{
+		background: #FFFFFF;
+		box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		padding: 40px 40px 40px 25px;
+		margin-right: -30px;
+		margin-top: 30px;
+		list-style-type: none;
+		z-index: 9;
+		li {
+			padding: 6px 0 6px 35px;
+			background-image: url('../icons/contraindications__point.svg');
+			background-repeat: no-repeat;
+			letter-spacing: 0.05em;
+			a {
+				font-family: Evolventa, sans-serif;
+				color: #262626;
+				font-size: 20px;
+				&:hover {
+					border-bottom: 1px solid #262626;
+				}
+			}
+		}
+	}
+}
