@@ -1,0 +1,72 @@
+.stock{
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		background: #CEDFF9;
+		border-radius: 20px;
+		padding: 0 40px 0 30px;
+		margin-top: -30px;
+	}
+	&__item{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&__title{
+			margin-bottom: 40px;
+			h2{
+				font-family: Evolventa, sans-serif;
+				font-weight: bold;
+				font-size: 35px;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				color: #8C52FF;
+				span{
+					font-size: 25px;
+					color: #262626;
+				}
+			}
+		}
+		&__timer{
+			background: #FFFFFF;
+			box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.25);
+			border-radius: 15px;
+			padding: 20px 30px;
+			margin-bottom: 30px;
+		}
+		&__percent{
+			span{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: Evolventa, sans-serif;
+				font-weight: bold;
+				font-size: 70px;
+				width: 175px;
+				height: 175px;
+				background: #FF7020;
+				border-radius: 120px;
+				color: #ffffff;
+			}
+		}
+		&__old{
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+		&__new{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			font-size: 50px;
+			padding: 5px 35px;
+			background: #8C52FF;
+			border-radius: 15px;
+			color: #ffffff;
+			margin-bottom: 30px;
+		}
+	}
+}

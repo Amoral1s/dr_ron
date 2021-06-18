@@ -11,14 +11,14 @@
 		}
 	}
 	&__items{
-		display: flex;
-		justify-content: space-between;
-		align-items:baseline;
-		&__columns {
-			flex: 1 1;
-		}
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		// grid-template-rows: 1fr 1fr 1fr;
 	}
 	&__item{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		position: relative;
 		background: #FFFFFF;
 		box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
