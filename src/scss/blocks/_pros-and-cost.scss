@@ -1,0 +1,66 @@
+.pros-and-cost{
+	&__title{
+		h2 {
+			font-family: 'Montserrat EB', sans-serif;
+			font-size: 50px;
+			color: #3B2072;
+			text-align: center;
+			margin-bottom: 60px;
+			margin-top: 100px;
+			span{
+				font-family: 'Montserrat EB', sans-serif;
+				display: block;
+				color: #CB6CE6;
+			}
+		}
+	}
+	&__item{
+		position: relative;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		padding: 90px 20px 40px 30px;
+		margin-right: 20px;
+		margin-bottom: 60px;
+		&__title{
+			content: '';
+			position: absolute;
+			right: -20px;
+			top: 20px;
+			display: inline-flex;
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			font-size: 20px;
+			color: #ffffff;
+			padding: 12px 30px;
+			background-color: #CB6CE6;
+			border-radius: 10px;
+			&-minus{
+				background-color: #CCCCCC!important;
+			}
+		}
+		&__list{
+			padding: 20px 0 0 0;
+			list-style-type: none;
+			&-minus{
+				li{
+					background-image: url('../icons/cost__icon.svg')!important;
+				}
+			}
+			li{
+				font-family: Evolventa, sans-serif;
+				font-size: 20px;
+				letter-spacing: 0.05em;
+				padding: 8px 0;
+				padding-left: 30px;
+				background-image: url('../icons/pros__icon.svg');
+				background-position: top +6px left;
+				background-repeat: no-repeat;
+				span{
+					font-family: Evolventa, sans-serif;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

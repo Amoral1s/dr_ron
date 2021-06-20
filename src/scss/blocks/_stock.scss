@@ -1,30 +1,33 @@
 .stock{
+	margin-bottom: 100px;
 	.container{
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+		flex-wrap: wrap;
 		background: #CEDFF9;
 		border-radius: 20px;
 		padding: 0 40px 0 30px;
-		margin-top: -30px;
 	}
 	&__item{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 		&__title{
 			margin-bottom: 40px;
 			h2{
 				font-family: Evolventa, sans-serif;
 				font-weight: bold;
-				font-size: 35px;
+				font-size: 38px;
 				text-transform: uppercase;
 				letter-spacing: 0.05em;
 				color: #8C52FF;
 				span{
-					font-size: 25px;
+					font-size: 30px;
 					color: #262626;
+					text-transform: lowercase;
 				}
 			}
 		}
@@ -36,6 +39,8 @@
 			margin-bottom: 30px;
 		}
 		&__percent{
+			position: absolute;
+			top: -90%;
 			span{
 				display: flex;
 				align-items: center;
@@ -51,9 +56,23 @@
 			}
 		}
 		&__old{
+			position: relative;
 			font-family: Evolventa, sans-serif;
 			font-weight: bold;
 			font-size: 35px;
+			margin-top: 15px;
+			padding: 10px;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 40%;
+				left: 0;
+				background: #FF7020;
+				border-radius: 2px;
+				transform: rotate(-10deg);
+				height: 5px;
+				width: 100%;
+			}
 		}
 		&__new{
 			display: flex;
@@ -67,6 +86,26 @@
 			border-radius: 15px;
 			color: #ffffff;
 			margin-bottom: 30px;
+		}
+		img{
+			max-width: 320px;
+			margin-top: -45px;
+		}
+	}
+	&__button{
+		width: 100%;
+		text-align: center;
+		button{
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			color: #ffffff;
+			margin-top: 40px;
+			font-size: 20px;
+			letter-spacing: 0.05em;
+			padding: 22px 100px;
+			border: none;
+			background: #8C52FF;
+			border-radius: 15px;
 		}
 	}
 }

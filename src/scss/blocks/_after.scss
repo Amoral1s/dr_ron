@@ -1,0 +1,101 @@
+.after{
+	margin-bottom: 100px;
+	&__title{
+		h2{
+			font-family: 'Montserrat EB', sans-serif;
+			font-size: 50px;
+			color: #3B2072;
+			text-align: center;
+			margin-bottom: 60px;
+			margin-top: 100px;
+		}
+	}
+	&__time{
+		position: relative;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		padding: 100px 25px 30px 25px;
+		margin-left: 20px;
+		margin-bottom: 60px;
+		&__title{
+			position: absolute;
+			content: '';
+			top: 20px;
+			left: -20px;
+			display: inline-flex;
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			font-size: 20px;
+			padding: 12px 30px;
+			background: #8C52FF;
+			border-radius: 10px;
+			color: #ffffff;
+		}
+		&__description{
+			font-family: Evolventa, sans-serif;
+			font-size: 20px;
+			span{
+				font-family: Evolventa, sans-serif;
+				font-weight: bold;
+			}
+		}
+	}
+	&__recommendations{
+		position: relative;
+		margin-right: 20px;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+		padding-top: 80px;
+		padding-bottom: 45px;
+		&__title{
+			position: absolute;
+			content: '';
+			top: 20px;
+			right: -20px;
+			display: inline-flex;
+			font-family: Evolventa, sans-serif;
+			font-weight: bold;
+			font-size: 20px;
+			padding: 12px 30px;
+			background: #CB6CE6;
+			border-radius: 10px;
+			color: #ffffff;
+		}
+		&__list{
+			list-style-type: none;
+			padding-left: 20px;
+			padding-right: 25px;
+			padding-bottom: 50px;
+			li{
+				font-family: Evolventa, sans-serif;
+				font-size: 20px;
+				letter-spacing: 0.05em;
+				background-image: url("../icons/indications__point.svg");
+				background-repeat: no-repeat;
+				background-position: left top +10px;
+				padding: 10px 0 10px 40px;
+				span{
+					font-family: Evolventa, sans-serif;
+					font-weight: bold;
+				}
+			}
+			&__title{
+				font-family: Evolventa, sans-serif;
+				font-weight: bold;
+				font-size: 25px;
+				color: #CB6CE6;
+				padding-left: 10px;
+			}
+			&:last-child{
+				.after__recommendations__list__title{
+					color: #5271FF;
+				}
+				li{
+					background-image: url("../icons/contraindications__point.svg")!important;
+				}
+			}
+		}
+	}
+}
