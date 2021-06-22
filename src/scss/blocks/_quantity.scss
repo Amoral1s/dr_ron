@@ -1,0 +1,68 @@
+.quantity{
+	margin-bottom: 100px;
+	&__title{
+		h2{
+			font-family: 'Montserrat EB', sans-serif;
+			font-size: 50px;
+			color: #3B2072;
+			text-align: center;
+			margin-bottom: 60px;
+			margin-top: 100px;
+		}
+	}
+	&__items{
+		position: relative;
+		display: flex;
+	}
+	&__table{
+		display: grid;
+		grid-template-columns: 0.7fr 1fr;
+		min-width: 840px;	
+		padding: 30px;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15);
+		border-radius: 10px;
+	}
+	&__item{
+		font-family: Evolventa, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+		border-top: 1px solid #CCCCCC;
+		border-bottom: 1px solid #CCCCCC;
+		&:nth-child(odd){
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #8C52FF;
+			letter-spacing: 0.05em;
+			border-right: 1px solid #CCCCCC;
+			padding-left: 0;
+		}
+	}
+	&__dr{
+		display: flex;
+		align-items: flex-end;
+		img{
+			position: absolute;
+			content: '';
+			top: -10px;
+			right: -80px;
+			max-width: 518px;
+		}
+		p{
+			text-align: right;
+			font-family: Evolventa, sans-serif;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			color: #262626;
+			padding-left: 30px;
+			span{
+				display: inline-flex;
+				font-family: Evolventa, sans-serif;
+				font-weight: bold;
+				font-size: 20px;
+				color: #8C52FF;
+				margin-top: 10px;
+			}
+		}
+	}
+}
