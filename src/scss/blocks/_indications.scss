@@ -40,6 +40,7 @@
 				background-image: url('../icons/indications__point.svg');
 				background-repeat: no-repeat;
 				a{
+					cursor: pointer;
 					font-family: Evolventa, sans-serif;
 					color: #262626;
 					&:hover{
@@ -152,6 +153,7 @@
 					background-repeat: no-repeat;
 
 					a {
+						cursor: pointer;
 						font-family: Evolventa, sans-serif;
 						color: #262626;
 

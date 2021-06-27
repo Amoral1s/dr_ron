@@ -71,7 +71,7 @@ a {
   font-size: 15px;
   cursor: pointer; }
   .btn-purple:hover {
-    background-color: #8C52FF !important; }
+    background: #8C52FF; }
 
 .header {
   padding: 15px 40px;
@@ -178,8 +178,8 @@ a {
     .main__advantages__item span {
       content: '';
       position: absolute;
-      top: -26px;
-      left: -26px;
+      top: -20px;
+      left: -20px;
       background-color: #8C52FF;
       width: 55px;
       height: 55px;
@@ -449,6 +449,7 @@ a {
     letter-spacing: 0.05em;
     color: #ffffff; }
   .like-result__item button {
+    cursor: pointer;
     font-family: Evolventa, sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -736,6 +737,7 @@ a {
           font-size: 25px;
           color: #262626; }
     .maps__popup button {
+      cursor: pointer;
       font-family: Evolventa, sans-serif;
       font-weight: bold;
       font-size: 20px;
@@ -921,6 +923,7 @@ a {
       background-image: url("../icons/indications__point.svg");
       background-repeat: no-repeat; }
       .indications__item__list li a {
+        cursor: pointer;
         font-family: Evolventa, sans-serif;
         color: #262626; }
         .indications__item__list li a:hover {
@@ -1007,6 +1010,7 @@ a {
       background-image: url("../icons/indications__point__blue.svg");
       background-repeat: no-repeat; }
       .indications__item__right__list li a {
+        cursor: pointer;
         font-family: Evolventa, sans-serif;
         color: #262626; }
         .indications__item__right__list li a:hover {
@@ -1328,15 +1332,10 @@ a {
     width: 100%;
     text-align: center; }
     .stock__button button {
-      font-family: Evolventa, sans-serif;
-      font-weight: bold;
-      color: #ffffff;
       margin-top: 40px;
       font-size: 20px;
       letter-spacing: 0.05em;
       padding: 22px 100px;
-      border: none;
-      background: #8C52FF;
       border-radius: 15px; }
 
 .pros-and-cost__title h2 {
@@ -1646,6 +1645,21 @@ a {
       letter-spacing: 0.05em;
       font-size: 20px;
       margin-top: 40px; }
+
+@media (max-width: 1200px) {
+  .main__advantages__item {
+    width: 190px;
+    height: 90px;
+    padding: 23px 0 23px 16px; }
+    .main__advantages__item span {
+      left: 70%;
+      width: 45px;
+      height: 45px; }
+      .main__advantages__item span img {
+        padding: 7px;
+        height: 100%; }
+    .main__advantages__item p {
+      font-size: 16px; } }
 
 .footer {
   background-color: #17171F;

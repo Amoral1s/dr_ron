@@ -235,13 +235,13 @@
 						<h3>Лицо</h3>
 					</div>
 					<ul class="indications__item__list">
-						<li><a href="">Мелкие, глубокие морщины</a></li>
-						<li><a href="">Отсутствие четких очертаний контура лица, провисание тканей (брыли)</a></li>
-						<li><a href="">Носогубные складки</a></li>
-						<li><a href="">Птоз век (нависшее веко)</a></li>
-						<li><a href="">Опущенные уголки губ</a></li>
-						<li><a href="">Нависание бровей</a></li>
-						<li><a href="">Второй подбородок</a></li>
+						<li><a id="indications__item__right__image__point_1">Мелкие, глубокие морщины</a></li>
+						<li><a id="indications__item__right__image__point_2">Отсутствие четких очертаний контура лица, провисание тканей (брыли)</a></li>
+						<li><a id="indications__item__right__image__point_3">Носогубные складки</a></li>
+						<li><a id="indications__item__right__image__point_4">Птоз век (нависшее веко)</a></li>
+						<li><a id="indications__item__right__image__point_5">Опущенные уголки губ</a></li>
+						<li><a id="indications__item__right__image__point_6">Нависание бровей</a></li>
+						<li><a id="indications__item__right__image__point_7">Второй подбородок</a></li>
 					</ul>
 					<div class="indications__item__image">
 						<img src="img/indications__item_1.png" alt="" class="indications__item__image_body">
@@ -252,7 +252,8 @@
 				<div class="indications__item__right">
 					<div class="indications__item__right__image">
 						<img src="img/indications__item_2.png" alt="" class="indications__item__right__image_face">
-						<span class="indications__item__right__image__point_1"><img src="icons/face__point.svg" alt=""></span>
+						<span class="indications__item__right__image__point_1"><img src="icons/face__point.svg"
+								alt=""></span>
 						<span class="indications__item__right__image__point_2"><img src="icons/face__point.svg" alt=""></span>
 						<span class="indications__item__right__image__point_3"><img src="icons/face__point.svg" alt=""></span>
 						<span class="indications__item__right__image__point_4"><img src="icons/face__point.svg" alt=""></span>
@@ -265,8 +266,8 @@
 					</div>
 					<div class="indications__item__right__block">
 						<ul class="indications__item__right__list">
-							<li><a href="" id="indications__item__image__point_1">Целлюлит</a></li>
-							<li><a href="" id="indications__item__image__point_2">Дряблость кожи</a></li>
+							<li><a id="indications__item__image__point_1">Целлюлит</a></li>
+							<li><a id="indications__item__image__point_2">Дряблость кожи</a></li>
 						</ul>
 						<button class="btn-purple">Бесплатная консультация</button>
 					</div>
@@ -556,7 +557,7 @@
 			</div>
 		</div>
 		<div class="stock__button">
-			<button>Записаться</button>
+			<button class="btn-purple">Записаться</button>
 		</div>
 	</section>
 	<section class="pros-and-cost">
@@ -754,7 +755,7 @@
 						<span>Для Москвы и МО</span><a href="tel:88003334628">8 (800) 333-46-28</a>
 					</div>
 					<div class="like-result__item">
-						<button>Получить консультацию</button>
+						<button class="btn-white">Получить консультацию</button>
 					</div>
 				</div>
 			</div>
@@ -1068,6 +1069,9 @@
 	<script src="js/script.js"></script>
 
 	<script>
+		$('.indications__item').click(function(i){
+
+		})
 		$("#indications__item__image__point_1").hover(function () {
 			$(".indications__item__image__point_1").css("transform", "scale(1.5)");
 		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
@@ -1078,6 +1082,44 @@
 		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
 	    $(".indications__item__image__point_2").css("transform", "scale(1)");
 	  });
+
+
+		$("#indications__item__right__image__point_1").hover(function () {
+			$(".indications__item__right__image__point_1").css("transform", "scale(1.5)");
+		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
+	    $(".indications__item__right__image__point_1").css("transform", "scale(1)");
+	  });
+		$("#indications__item__right__image__point_2").hover(function () {
+			$(".indications__item__right__image__point_2").css("transform", "scale(1.5)");
+		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
+	    $(".indications__item__right__image__point_2").css("transform", "scale(1)");
+	  });
+		$("#indications__item__right__image__point_3").hover(function () {
+			$(".indications__item__right__image__point_3").css("transform", "scale(1.5)");
+		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
+	    $(".indications__item__right__image__point_3").css("transform", "scale(1)");
+	  });
+		$("#indications__item__right__image__point_4").hover(function () {
+			$(".indications__item__right__image__point_4").css("transform", "scale(1.5)");
+		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
+	    $(".indications__item__right__image__point_4").css("transform", "scale(1)");
+	  });
+		$("#indications__item__right__image__point_5").hover(function () {
+			$(".indications__item__right__image__point_5").css("transform", "scale(1.5)");
+		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
+	    $(".indications__item__right__image__point_5").css("transform", "scale(1)");
+	  });
+		$("#indications__item__right__image__point_6").hover(function () {
+			$(".indications__item__right__image__point_6").css("transform", "scale(1.5)");
+		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
+	    $(".indications__item__right__image__point_6").css("transform", "scale(1)");
+	  });
+		$("#indications__item__right__image__point_7").hover(function () {
+			$(".indications__item__right__image__point_7").css("transform", "scale(1.5)");
+		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
+	    $(".indications__item__right__image__point_7").css("transform", "scale(1)");
+	  });
+
 	</script>
 </body>
 </html>

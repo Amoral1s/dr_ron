@@ -1,0 +1,23 @@
+@media(max-width: 1200px){
+	.main{
+		&__advantages{
+			&__item{
+				width: 190px;
+				height: 90px;
+				padding: 23px 0 23px 16px;
+				span{
+					left: 70%;
+					width: 45px;
+					height: 45px;
+					img{
+						padding: 7px;
+						height: 100%;
+					}
+				}
+				p{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
