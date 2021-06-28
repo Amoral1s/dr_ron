@@ -1120,26 +1120,27 @@
 	    $(".indications__item__right__image__point_7").css("transform", "scale(1)");
 	  });
 
-		var paralax = document.getElementById("main");
+		const paralax = document.getElementById("main");
 
-		var moveCoef = 0.5;
+		const moveCoef = 0.3;
+		
+		const scroll = (id, time) => {
+			window.addEventListener('scroll', () => {
+				const r = id.getBoundingClientRect();
 
-		window.addEventListener("scroll", scroll);
-		window.addEventListener("resize", scroll);
-		scroll();
+				let paralaxYCenter = r.y + r.height / 2;
+				let scrollYCenter = window.innerHeight / 2;
 
-		function scroll() {
-			var r = paralax.getBoundingClientRect();
+				/* Вычисляем смещение */
+				let move = (paralaxYCenter - scrollYCenter) * moveCoef + time;
 
-			var paralaxYCenter = r.y + r.height / 2;
-			var scrollYCenter = window.innerHeight / 2;
-
-			/* Вычисляем смещение */
-			var move = (paralaxYCenter - scrollYCenter) * moveCoef + 400;
-
-			paralax.style.backgroundPositionY = move + "px";
+				id.style.backgroundPositionY = `${move}px`;
+			});
 		}
 
+		window.addEventListener("scroll", scroll(paralax, 400));
+		window.addEventListener("resize", scroll(paralax, 400));
+		
 	</script>
 </body>
 </html>
