@@ -1,4 +1,10 @@
 .main{
+	position:relative;
+	background-image: url('../img/dots__big.png');
+	background-repeat: no-repeat;
+	background-position: bottom left +100px;
+	width: 100%;
+	height: 815px;
 	.container{
 		background-image: url('../img/main__face.png');
 		background-repeat: no-repeat;

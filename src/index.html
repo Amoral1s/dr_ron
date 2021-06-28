@@ -45,7 +45,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="main">
+	<section class="main" id="main">
 		<div class="container" style="background-image: url('img/dr__ron.png');">
 			<div class="main__breadcrumbs">
 				<ul>
@@ -1119,6 +1119,26 @@
 		}, function(){ // задаем функцию, которая срабатывает, когда указатель выходит из элемента 	
 	    $(".indications__item__right__image__point_7").css("transform", "scale(1)");
 	  });
+
+		var paralax = document.getElementById("main");
+
+		var moveCoef = 0.5;
+
+		window.addEventListener("scroll", scroll);
+		window.addEventListener("resize", scroll);
+		scroll();
+
+		function scroll() {
+			var r = paralax.getBoundingClientRect();
+
+			var paralaxYCenter = r.y + r.height / 2;
+			var scrollYCenter = window.innerHeight / 2;
+
+			/* Вычисляем смещение */
+			var move = (paralaxYCenter - scrollYCenter) * moveCoef + 400;
+
+			paralax.style.backgroundPositionY = move + "px";
+		}
 
 	</script>
 </body>
